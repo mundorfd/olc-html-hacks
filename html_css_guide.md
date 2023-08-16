@@ -30,23 +30,5 @@ Add `start="4"` to the opening `<ol>` tag.
 
 ## Adding grid-row to align the first country section with its image
 
-## Changing width and height of frame elements (YouTube)
-Let's change the following frame:
-
-```html
-<p><iframe title="YouTube video player" src="https://www.youtube.com/embed/LaLvVc1sS20" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></p>
-```
-
-
-Let's make the width take up 100% of the screen. To do this, we need to alter the `width="560" height="315"` part of the original to `width="100%" height="500"`. 
-
-> [!NOTE]
-> You will need to set a custom height when changing these settings.
-
-```html
- <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/LaLvVc1sS20" width="100%" height="500" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></p>
-```
-
-
 ## Changing table styles by adding classes
 If you have access to the stylesheet of a website, it is easier to create 'classes' that can be applied to elements rather than manaully adding inline CSS. Some classes are already available for you on certain Learning Management Systems. Let's apply some to the `<table>` on Canvas:
