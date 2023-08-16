@@ -41,7 +41,7 @@ Let's change the following frame:
 Let's make the width take up 100% of the screen. To do this, we need to alter the `width="560" height="315"` part of the original to `width="100%" height="500"`. 
 
 > [!NOTE]
-> Note that you will need to set a custom height when changing these settings.
+> You will need to set a custom height when changing these settings.
 
 ```
  <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/LaLvVc1sS20" width="100%" height="500" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></p>
