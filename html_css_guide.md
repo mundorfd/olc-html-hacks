@@ -1,1 +1,1 @@
-# HTML and CSS Guide and Resources
+# Step by Step Guide and Resources List
