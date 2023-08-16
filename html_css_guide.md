@@ -9,6 +9,7 @@ To emphasize a quote on Canvas, use the `blockquote` tag:
 </blockquote>
 ```
 <br>
+
 #### Output
 
 <blockquote>
