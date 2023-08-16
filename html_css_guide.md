@@ -3,7 +3,7 @@
 ## Callout Box
 ### Blockquote element
 To emphasize a quote on Canvas, use the `blockquote` tag:
-```
+```html
 <blockquote>
 <p>&ldquo;I say let the world go to hell, but I should always have my tea.&rdquo; ― Fyodor Dostoevsky, Notes from Underground</p>
 </blockquote>
