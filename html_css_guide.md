@@ -7,12 +7,25 @@
 ### Fixing List Numbers
 We need to continue the ordered list from where the previous one left off. Let's tell it to start from the number **4**.
 
-Add `start="4"` to the opening `<ol>` tag.
+Add `start="4"` to the opening `<ol>` tag which comes after the 'Optional:' paragraph.
 
 ```html
 <ol start="4">
 ```
-### Adding IDs to elements
+
+### Adding id attributes to elements
+Sometimes it is necessary to identify certain elements for styling or scripting purposes. To do this, we can add an identifer (or `id`) attribute to the element. These identifiers must be unique within the same HTML document. For this demonstration, we will use a unique `id` on the `h2` elements, so that once clicked, the list items in our linked list at the top moves the page to the corresponding section.
+
+To do this, add `id=` and the unique identifier after the opening `h2` tag, as we have below:
+
+```html
+<h2 id="whatis">What is tea?</h2>
+<h2 id="types">What are the main types of tea?</h2>
+<h2 id="comefrom" </h2>
+<h2 id="consumed"</h2>
+```
+
+Whatever you have used for your `id` attribute will be used later with the anchor element.
 
 ### Adding Anchor Links
 
