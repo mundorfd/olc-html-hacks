@@ -169,10 +169,101 @@ One of our new `h2` elements will now look like this:
 ```
 
 #### Styling "Did you know?" paragraph
+We want to call attention to the "Did you know?" paragraph. Let's set another font color, give it a background color, some additional padding and margins to move it to the center, and a line at the top using the `border-top` property to show a greater degree of separation from the main text:
 
-### Wrapping a `div` around the entire page
+```css
+color: #2d3b45;
+background-color: #fefefa;
+padding: 10px;
+margin: 30px 7% 0 7%;
+border-top: 3px solid #b2b2af;
+```
 
-### Adding `div` for intro section
+So now the paragraph's HTML looks like this:
+
+```html
+<p style="color: #2d3b45; background-color: #fefefa; padding: 10px; margin: 30px 7% 0 7%; border-top: 3px solid #b2b2af;">Did you know? Although health benefits of drinking tea have been assumed throughout the history, there is no high-quality evidence showing that tea consumption gives significant benefits other than possibly increasing alertness, an effect caused by caffeine in the tea leaves.</p>
+```
+
+### Styling with `div`
+We wrote above about generic `div` containers. The `div` tag is used to create a section in the HTML document, or to contain elements for styling purposes. Let's use them to style the page.
+
+#### Wrapping a `div` around the entire page
+At OSU Ecampus, we like to limit the maximum width a page can have. This provides a cleaner look on Canvas. You can set this to anything you want, or simply not include it at all if you would like your page content to extend to the maximum width of the user's web browser window.
+
+Start by going all the way to the top of the HTML, and adding the following:
+
+```html
+<div style="max-width: 1000px;">
+```
+
+Then, at the very end of the document, close the `div` with 
+
+```html
+</div>
+```
+
+Your page should now look something like this:
+
+```html
+<div style="max-width: 1000px;">
+   [ALL THE CONTENT!]
+</div>
+```
+
+What this small change has done is limit the maximum width of the content to 1000 pixels. No matter how wide the web browser window, the content will not exceed 1000 pixels in width.
+
+#### Adding `div` for intro section
+We can also use `div` tags to style entire sections of the page. Let's style all of our introduction section in one go by wrapping it with a `div`:
+
+As before, we can break down the requirements for our introduction section. It should have:
+
+1. A set font color.
+2. A new background color.
+3. A full border on all sides.
+4. Some padding to give the content some space away from the edge of the border.
+
+The CSS for this would be:
+
+```css
+color: #2d3b45;
+background-color: #fefefa;
+border: 1px solid #b2b2af;
+padding: 10px 20px 10px 20px;
+```
+
+Then we just add it to our new `div` by creating the `div` with the styles:
+```html
+ <div style="color: #2d3b45; background-color: #fefefa; border: 1px solid #b2b2af; padding: 10px 20px 10px 20px;">
+```
+
+And close at the end of the introduction section:
+
+```html
+</div>
+```
+
+So now the entire introduction section is separated from the rest of the page with a container, which is styled using our chosen colors and border:
+
+```html
+ <div style="color: #2d3b45; background-color: #fefefa; border: 1px solid #b2b2af; padding: 10px 20px 10px 20px;">
+        <blockquote>
+            <p>&ldquo;I say let the world go to hell, but I should always have my tea.&rdquo; ― Fyodor Dostoevsky, Notes from Underground</p>
+        </blockquote>
+        <p>In this section, we'll talk about tea! Please review the following topics:</p>
+        <ol>
+            <li><a href="#whatis">What is tea?</a></li>
+            <li><a href="#types">What are the main types of tea?</a></li>
+            <li><a href="#comefrom">Where does tea come from?</a></li>
+        </ol>
+        <p>Optional:</p>
+        <ol start="4">
+            <li><a href="#consumed">How is tea consumed around the world?</a></li>
+        </ol>
+        <a href="#consumed"> </a>
+    </div>
+```
+
 
 ### Adding grid-row to align the first country section with its image
 
