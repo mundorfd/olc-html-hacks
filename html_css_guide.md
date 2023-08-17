@@ -119,10 +119,54 @@ margin: 0 0 10px 30px;
 > Margins, and properties like this, go clockwise around the element, starting from the top.
 
 ### Align the second image
+Aligning the second image works in much the same way, only this time we are going to `float` it to the left instead of the right:
+```html
+<figure style="width: 40%; float: left; margin: 0 30px 10px 0;"><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401296/preview" alt="Four types of tea" width="381" height="230" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401296" data-api-returntype="File" />
+        <figcaption><span style="font-size: 10pt;">Photo: Teas of different levels of oxidation (left to right): green, yellow, oolong, and black. Source: <a class="inline_disabled" href="https://en.wikipedia.org/wiki/File:Tea_in_different_grade_of_fermentation.jpg" target="_blank" rel="noopener">Wikimedia Commons, Public Domain.</a></span></figcaption>
+    </figure>
+```
+
+The CSS settings for this are:
+
+```css
+width: 40%;
+float: left;
+margin: 0 30px 10px 0;"
+```
+
+So a maximum width of 40%, floating the image to the left, and a margin of 0 on the top, 30 pixels on the right, 10 pixels on the bottom, and 0 pixels on the left.
 
 ### Adding inline styles
+Without any additional styling, elements like headings and generic `div` containers will have whatever the default styles are from the `styles.css` file. As we cannot edit this, we need to continue adding our styles "inline" if we want to apply things like font changes, backgrounds, and borders.
 
 #### Styling Heading 2
+Let's style the `h2` elements so they stand out. We are going to make the following changes:
+
+1. Change font color to white (there are many ways to do this, but the quickest is to use the hexidecimal code for white, which is #ffffff).
+2. Add a dark green background color to the entire element (using hex code #004225).
+3. Change the font-size to `18pt`.
+4. Add a margin to the top of 50 pixels.
+5. Add a margin to the bottom of 20 pixels.
+6. Add additional padding around the text of the element of 7 pixels. (This will push the text 7 pixels out in either direction).
+
+The CSS for this would be:
+```css
+color: #ffffff;
+background-color: #004225;
+font-size: 18pt;
+margin-top: 50px;
+margin-bottom: 20px;
+padding: 7px;
+```
+
+> [!NOTE]
+> Steps 4 and 5 could be combined by using the `margin` shorthand property as we have done above. In this case, it would be `margin: 50px 0 20px 0;` 
+
+One of our new `h2` elements will now look like this:
+
+```html
+<h2 id="whatis" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">What is tea?</h2>
+```
 
 #### Styling "Did you know?" paragraph
 
