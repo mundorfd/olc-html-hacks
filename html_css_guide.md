@@ -93,7 +93,7 @@ Essentially, we are going from this:
 To this:
 
 ```html
-    <figure style="width: 25%; float: right; margin-right: 10px; margin: 0 0 10px 30px;"><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401295/preview" alt="camellia sinensis" width="249" height="302" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401295" data-api-returntype="File" />
+    <figure style="width: 25%; float: right; margin: 0 0 10px 30px;"><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401295/preview" alt="camellia sinensis" width="249" height="302" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401295" data-api-returntype="File" />
         <figcaption><span style="font-size: 10pt;">Photo: Tea plant <em>(Camellia sinensis) </em>from K&ouml;hler's Medicinal Plants, 1897. Source: <a class="inline_disabled" href="https://en.wikipedia.org/wiki/File:Camellia_sinensis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-025.jpg" target="_blank" rel="noopener">Wikimedia Commons, Public Domain.</a></span></figcaption>
     </figure>
 ```
@@ -109,13 +109,11 @@ For this demonstration, we have added the following styles:
 ```css
 width: 25%;
 float: right;
-margin-right: 10px;
 margin: 0 0 10px 30px;
 ```
 1. The `width` property sets the **maximum** width that the image can be.
 2. The `float` property will place the element either to the left or right, allowing text to wrap around it.
-3. The `margin-right` property will set a margin area on the right side of the element.
-4. The `margin` property will set a margin area on the top, right, bottom and left (in that order). 
+3. The `margin` property will set a margin area on the top, right, bottom and left (in that order). So 0 on the top, 0 on the right, 10 pixels on the bottom, and 30 pixels on the left.
 
 ### Align the second image
 
