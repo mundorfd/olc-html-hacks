@@ -75,6 +75,8 @@ This will leave us with something like this:
         </ol>
 ```
 
+Now when you click on any of the list items, it will append the `#id` to the end of the current URL, and scroll the page to the corresponding `id`. This will work on **any** page you copy the HTML into, and is why we did not add a full link with `https://...`!
+
 ### Aligning the first image with `figcaption`
 
 ### Align the second image
