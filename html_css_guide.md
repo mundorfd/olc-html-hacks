@@ -115,7 +115,7 @@ margin: 0 0 10px 30px;
 2. The `float` property will place the element either to the left or right, allowing text to wrap around it.
 3. The `margin` property will set a margin area on the top, right, bottom and left (in that order). So 0 on the top, 0 on the right, 10 pixels on the bottom, and 30 pixels on the left.
 
-> ![NOTE]
+> [!NOTE]
 > Margins, and properties like this, go clockwise around the element, starting from the top.
 
 ### Align the second image
