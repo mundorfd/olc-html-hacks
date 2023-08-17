@@ -214,9 +214,9 @@ Your page should now look something like this:
 What this small change has done is limit the maximum width of the content to 1000 pixels. No matter how wide the web browser window, the content will not exceed 1000 pixels in width.
 
 #### Adding `div` for intro section
-We can also use `div` tags to style entire sections of the page. Let's style all of our introduction section in one go by wrapping it with a `div`:
+We can also use `div` tags to style entire sections of the page. Let's style all of our Introduction section in one go by wrapping it with a `div`:
 
-As before, we can break down the requirements for our introduction section. It should have:
+As before, we can break down the requirements for our Introduction section. It should have:
 
 1. A set font color.
 2. A new background color.
@@ -232,12 +232,12 @@ border: 1px solid #b2b2af;
 padding: 10px 20px 10px 20px;
 ```
 
-Then we just add it to our new `div` by creating the `div` with the styles:
+Then we just add it to our Introduction section by creating the `div` container with the styles:
 ```html
  <div style="color: #2d3b45; background-color: #fefefa; border: 1px solid #b2b2af; padding: 10px 20px 10px 20px;">
 ```
 
-And close at the end of the introduction section:
+And close at the end of the Introduction section:
 
 ```html
 </div>
