@@ -285,7 +285,7 @@ Let's apply some classes to the `<table>` on Canvas. To get the effect we have h
 * `ic-Table--striped`:  produces a striped table among rows in the table body.
 * `ic-Table--hover-row`: highlights the row the user's cursor is currently hoving over.
 
-This results in the following large code:
+This results in the following large block of HTML:
 
 ```html
    <table class="ic-Table ic-Table--striped ic-Table--hover-row" style="border-collapse: collapse; width: 52.6913%; height: 306px; margin-left: auto; margin-right: auto;" border="1">
