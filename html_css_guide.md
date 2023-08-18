@@ -279,7 +279,77 @@ So now the entire introduction section is separated from the rest of the page wi
 If you have access to the stylesheet of a website, it is easier to create 'classes' that can be applied to elements rather than manaully adding inline CSS. Some classes are already available for you on certain Learning Management Systems. 
 
 #### Changing table styles by adding classes
-Let's apply some classes to the `<table>` on Canvas:
+Let's apply some classes to the `<table>` on Canvas. To get the effect we have here, we are going to use the follwing classes:
+
+* `ic-Table`
+* `ic-Table--striped`:  produces a striped table among rows in the table body.
+* `ic-Table--hover-row`: highlights the row the user's cursor is currently hoving over.
+
+This results in the following large code:
+
+```html
+   <table class="ic-Table ic-Table--striped ic-Table--hover-row" style="border-collapse: collapse; width: 52.6913%; height: 306px; margin-left: auto; margin-right: auto;" border="1">
+        <caption>Tea consumption ranking</caption>
+        <tbody>
+            <tr style="height: 26px;">
+                <th style="width: 11.3756%; text-align: left; height: 26px;" scope="col">Rank</th>
+                <th style="width: 24.8694%; text-align: left; height: 26px;" scope="col">Country</th>
+                <th style="width: 63.683%; height: 26px;" scope="col">Annual tea consumption per capita (lbs)</th>
+            </tr>
+            <tr style="height: 28px;">
+                <td style="width: 11.3756%; height: 28px;">1</td>
+                <td style="width: 24.8694%; height: 28px;">Turkey</td>
+                <td style="width: 63.683%; text-align: center; height: 28px;">6.96</td>
+            </tr>
+            <tr style="height: 28px;">
+                <td style="width: 11.3756%; height: 28px;">2</td>
+                <td style="width: 24.8694%; height: 28px;">Ireland</td>
+                <td style="width: 63.683%; text-align: center; height: 28px;">4.83</td>
+            </tr>
+            <tr style="height: 28px;">
+                <td style="width: 11.3756%; height: 28px;">3</td>
+                <td style="width: 24.8694%; height: 28px;">United Kingdom</td>
+                <td style="width: 63.683%; text-align: center; height: 28px;">4.28</td>
+            </tr>
+            <tr style="height: 28px;">
+                <td style="width: 11.3756%; height: 28px;">4</td>
+                <td style="width: 24.8694%; height: 28px;">Pakistan</td>
+                <td style="width: 63.683%; text-align: center; height: 28px;">3.30</td>
+            </tr>
+            <tr style="height: 28px;">
+                <td style="width: 11.3756%; height: 28px;">5</td>
+                <td style="width: 24.8694%; height: 28px;">Iran</td>
+                <td style="width: 63.683%; text-align: center; height: 28px;">3.30</td>
+            </tr>
+            <tr style="height: 28px;">
+                <td style="width: 11.3756%; height: 28px;">6</td>
+                <td style="width: 24.8694%; height: 28px;">Russia</td>
+                <td style="width: 63.683%; text-align: center; height: 28px;">3.05</td>
+            </tr>
+            <tr style="height: 28px;">
+                <td style="width: 11.3756%; height: 28px;">7</td>
+                <td style="width: 24.8694%; height: 28px;">Morocco</td>
+                <td style="width: 63.683%; text-align: center; height: 28px;">2.68</td>
+            </tr>
+            <tr style="height: 28px;">
+                <td style="width: 11.3756%; height: 28px;">8</td>
+                <td style="width: 24.8694%; height: 28px;">New Zealand</td>
+                <td style="width: 63.683%; text-align: center; height: 28px;">2.63</td>
+            </tr>
+            <tr style="height: 28px;">
+                <td style="width: 11.3756%; height: 28px;">9</td>
+                <td style="width: 24.8694%; height: 28px;">Chile</td>
+                <td style="width: 63.683%; text-align: center; height: 28px;">2.62</td>
+            </tr>
+            <tr style="height: 28px;">
+                <td style="width: 11.3756%; height: 28px;">10</td>
+                <td style="width: 24.8694%; height: 28px;">Egypt</td>
+                <td style="width: 63.683%; text-align: center; height: 28px;">2.23</td>
+            </tr>
+        </tbody>
+    </table>
+```
+
 
 #### Adding grid-row to align the first country section with its image
 One of the most common ways to align content on a page is to use a table, the make the borders invisible. This usually results in the intended layout, but is not very accessible, nor a responsive solution for multiple screen sizes. Instead, there are many ways to change the layout of the page using frameworks and tools that Canvas has directly integrated, such as Bootstrap and Flexbox.
@@ -385,8 +455,6 @@ On our site, we are going to make each row uneven, as this gives more room for t
         </div>
     </div>
 ```
-
-
 
 ## Resource List
 1. [W3Schools HTML Elements Reference](https://www.w3schools.com/tags/tag_div.ASP)
