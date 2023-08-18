@@ -131,7 +131,7 @@ The CSS settings for this are:
 ```css
 width: 40%;
 float: left;
-margin: 0 30px 10px 0;"
+margin: 0 30px 10px 0;
 ```
 
 So a maximum width of 40%, floating the image to the left, and a margin of 0 on the top, 30 pixels on the right, 10 pixels on the bottom, and 0 pixels on the left.
