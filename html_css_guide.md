@@ -275,11 +275,121 @@ So now the entire introduction section is separated from the rest of the page wi
 
 ![New Intro Section](/assets/new_intro_section.png)
 
-### Adding grid-row to align the first country section with its image
+### Working with classes
+If you have access to the stylesheet of a website, it is easier to create 'classes' that can be applied to elements rather than manaully adding inline CSS. Some classes are already available for you on certain Learning Management Systems. 
 
-### Changing table styles by adding classes
-If you have access to the stylesheet of a website, it is easier to create 'classes' that can be applied to elements rather than manaully adding inline CSS. Some classes are already available for you on certain Learning Management Systems. Let's apply some to the `<table>` on Canvas:
+#### Changing table styles by adding classes
+Let's apply some classes to the `<table>` on Canvas:
+
+#### Adding grid-row to align the first country section with its image
+One of the most common ways to align content on a page is to use a table, the make the borders invisible. This usually results in the intended layout, but is not very accessible, nor a responsive solution for multiple screen sizes. Instead, there are many ways to change the layout of the page using frameworks and tools that Canvas has directly integrated, such as Bootstrap and Flexbox.
+
+Canvas has its own implementation of Flexbox using the `.grid-row` class, and so we will use this to position the images and text in the section about different countries and their tea-drinking styles.
+
+> [!NOTE]
+> On Canvas, we are going to use the `grid-row` class, as this is a custom interpretation of a grid layout modified by Instructure. The regular form of this is just `row`.
+
+Open a new `div` container, but instead of just using a `style` attribute, we are going to use a `class` attribute as well:
+
+```html
+<div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
+[...]
+</div>
+```
+
+##### Background info
+Now, let's explain quickly what this does. The `grid-row` class will split all content inside the container into 12 equal columns (or parts if it's easier to picture). You can then choose how much of the 12 columns you want each row in the grid to take up. You can also change these based on the screen size. So perhaps you want all 12 parts of a row to be given to one image on a mobile device, but on a larger screen, you want two images to occupy that space.
+
+The following screen sizes can be applied to the above flex item classes. You can decide if you would like to make visual adjustments to each kind of screen size available.
+
+| Identifier  | Screen Size |
+| ------------- | ------------- |
+| xs  | Extra Small  |
+| sm  | Small  |
+| md | Medium |
+| lg | Large  |
+
+Inside our first `div`, we can add more `div` containers with the screen sizes and column/part allocation. For example:
+
+```html
+<div class="col-xs-12 col-md-4">
+[The content goes here!]
+</div>
+```
+
+Let's say you wanted to make 3 columns with text and images inside them. When someone views it on laptop/desktop, you would like the columns to be next to each other horizontally. When someone looks at it from a mobile device, however, you would want the columns to stack vertically. We can use this using 3 instances of this class: `<div class="col-xs-12 col-md-4">`. What this is telling the browser is that on an 'xs' or extra small screen, the column takes up all 12 of the allocated 12 parts. On a 'md', or medium screen, it will only take up 4 of the twelve (remember that we wanted 3 columns and so ). Setting it to 12 in extra small screens like phones will vertically stack all columns within this container as they are set to utilize every part of the screen, not just 4 parts of it as with the medium screen size.
+
+```html
+<div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
+  <div class="col-xs-12 col-md-4">
+    [The content goes here!]
+  </div>
+  <div class="col-xs-12 col-md-4">
+    [The content goes here!]
+  </div>
+  <div class="col-xs-12 col-md-4">
+    [The content goes here!]
+  </div>
+</div>
+```
+
+And what would happen here is that on an extra small screen like a mobile device, the content would be seperated onto 3 rows. However, on a medium screen size and above, all of that content would be on one row, because the first one takes up 4 parts, the next one takes up 4 parts, and the final one takes up 4 parts. 4 + 4 + 4 = 12, and so that is the size of one row. If you changed one of them from `col-md-4` to `col-md-5`, we would get 13, and anything over 12 is pushed onto the next row.
+
+##### Back to the demo
+On our site, we are going to make each row uneven, as this gives more room for the images over the text.
+
+```html
+    <div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
+        <div class="col-xs-12 col-lg-5">
+            <h3>China and Japan</h3>
+            <p>The Chinese and Japanese tea ceremonies traditions employ certain techniques and ritualized protocol of brewing and serving tea for enjoyment in a refined setting. &nbsp;All of these tea ceremonies and rituals contain "an adoration of the beautiful among the sordid facts of everyday life", as well as refinement, an inner spiritual content, humility, restraint and simplicity.</p>
+        </div>
+        <div class="col-xs-12 col-lg-7">
+            <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401297/preview" alt="Tea ceremony" width="500" height="333" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401297" data-api-returntype="File" /></p>
+        </div>
+    </div>
+    <div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
+        <div class="col-xs-12 col-lg-5">
+            <h3>UK</h3>
+            <p>In the United Kingdom, 63% of people drink tea daily. It is customary for a host to offer tea to guests soon after their arrival. Tea is consumed both at home and outside the home, often in caf&eacute;s or tea rooms. Afternoon tea with cakes on fine porcelain is a cultural stereotype.</p>
+        </div>
+        <div class="col-xs-12 col-lg-7">
+            <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401298/preview" alt="Old school style tea set with cakes" width="503" height="336" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401298" data-api-returntype="File" /></p>
+        </div>
+    </div>
+    <div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
+        <div class="col-xs-12 col-lg-5">
+            <h3>Russia</h3>
+            <p>Russia has a long, rich tea history dating to 1638 when tea was introduced to Tsar Michael. Russian tea is brewed and can be served sweet, and hot or cold. It is traditionally taken at afternoon tea, but has since spread as an all day drink, especially at the end of meals, served with dessert. Social gatherings were considered incomplete without tea, which was traditionally brewed in a samovar.&nbsp;</p>
+        </div>
+        <div class="col-xs-12 col-lg-7">
+            <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401299/preview" alt="Traditional Russian tea with samovar" width="501" height="427" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401299" data-api-returntype="File" /></p>
+        </div>
+    </div>
+    <div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
+        <div class="col-xs-12 col-lg-5">
+            <h3>India</h3>
+            <p>Indian tea culture is strong; the drink is the most popular hot beverage in the country. It is consumed daily in almost all houses, offered to guests, consumed in high amounts in domestic and official surroundings, and is made with the addition of milk with or without spices, and usually sweetened. It is sometimes served with biscuits to be dipped in the tea and eaten before consuming the tea.&nbsp;</p>
+        </div>
+        <div class="col-xs-12 col-lg-7">
+            <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401300/preview" alt="Pouring Indian tea with milk and spices from a ceramic teapot" width="500" height="333" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401300" data-api-returntype="File" /></p>
+        </div>
+    </div>
+    <div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
+        <div class="col-xs-12 col-lg-5">
+            <h3>Burma</h3>
+            <p>In Burma (Myanmar), tea is consumed not only as hot drinks, but also as sweet tea and green tea known locally as laphet-yay and laphet-yay-gyan, respectively. Pickled tea leaves, known locally as lahpet, are also a national delicacy. Pickled tea is usually eaten with roasted sesame seeds, crispy fried beans, roasted peanuts and fried garlic chips.</p>
+        </div>
+        <div class="col-xs-12 col-lg-7">
+            <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401301/preview" alt="Traditional Burmese Lahpet salad, made out of fermented tea leaves, served with nuts, beans and sprouts." width="500" height="331" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401301" data-api-returntype="File" /></p>
+        </div>
+    </div>
+```
+
 
 
 ## Resource List
 1. [W3Schools HTML Elements Reference](https://www.w3schools.com/tags/tag_div.ASP)
+2. [W3Schools HTML class Attribute](https://www.w3schools.com/html/html_classes.asp)
+3. [Bootstrap](https://getbootstrap.com)
+4. [Flexbox Grid](http://flexboxgrid.com)
