@@ -264,6 +264,7 @@ So now the entire introduction section is separated from the rest of the page wi
     </div>
 ```
 
+![New Intro Section](/assets/new_intro_section.png)
 
 ### Adding grid-row to align the first country section with its image
 
