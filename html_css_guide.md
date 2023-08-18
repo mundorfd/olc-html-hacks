@@ -192,6 +192,8 @@ So now the paragraph's HTML looks like this:
 <p style="color: #2d3b45; background-color: #fefefa; padding: 10px; margin: 30px 7% 0 7%; border-top: 3px solid #b2b2af;">Did you know? Although health benefits of drinking tea have been assumed throughout the history, there is no high-quality evidence showing that tea consumption gives significant benefits other than possibly increasing alertness, an effect caused by caffeine in the tea leaves.</p>
 ```
 
+![New "Did You Know?" Paragraph](/assets/new_did_you_know.png)
+
 ### Styling with `div`
 We wrote above about generic `div` containers. The `div` tag is used to create a section in the HTML document, or to contain elements for styling purposes. Let's use them to style the page.
 
