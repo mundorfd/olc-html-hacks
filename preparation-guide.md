@@ -14,7 +14,7 @@ We recommend authoring Canvas pages in an external text editor rather than direc
 
 There are other benefits to using a text editor designed to support HTML development as well, here are a few features to look for that will make learning and writing HTML easier:
 
-- Syntax Highlighting: Color-codes HTML elements for easier reading. Synatx Highlighting can also help you learn HTML faster.
+- Syntax Highlighting: Color-codes HTML elements for easier reading.
 - Auto-Completion: Suggests tags or attributes as you type.
 - Error Detection: Highlights mistakes in the code.
 - Preview Option: Allows you to see how the HTML will render.
