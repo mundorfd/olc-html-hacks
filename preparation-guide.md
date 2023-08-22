@@ -4,7 +4,7 @@
 ## What You Will Need
 
 1. Laptop computer with internet access.
-2. Access to your learning management system and the ability to author pages (we will be demonstrating in [Canvas](https://www.instructure.com/canvas).
+2. Access to your learning management system and the ability to author pages (we will be demonstrating in [Canvas](https://www.instructure.com/canvas)).
 
 ### Optional but Useful
 
