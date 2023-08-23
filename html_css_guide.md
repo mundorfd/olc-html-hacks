@@ -142,7 +142,7 @@ So a maximum width of 40%, floating the image to the left, and a margin of 0 on 
 ![New Float Left](assets/new_float_left.png)
 
 ### Adding inline styles
-Without any additional styling, elements like headings and generic `div` containers will have whatever the default styles are from the `styles.css` file. As we cannot edit this, we need to continue adding our styles "inline" if we want to apply things like font changes, backgrounds, and borders.
+Without any additional styling, elements like headings or paragraphs will have whatever the default styles are from the `styles.css` file. As we cannot edit this, we need to continue adding our styles "inline" if we want to apply things like font changes, backgrounds, and borders.
 
 #### Styling Heading 2
 Let's style the `h2` elements so they stand out. We are going to make the following changes:
@@ -195,7 +195,7 @@ So now the paragraph's HTML looks like this:
 ![New "Did You Know?" Paragraph](/assets/new_did_you_know.png)
 
 ### Styling with `div`
-We wrote above about generic `div` containers. The `div` tag is used to create a section in the HTML document, or to contain elements for styling purposes. Let's use them to style the page.
+The `div` tag is used to create a section in the HTML document, or to contain elements for styling purposes. Let's use them to style the page.
 
 #### Wrapping a `div` around the entire page
 At OSU Ecampus, we like to limit the maximum width a page can have. This provides a cleaner look on Canvas. You can set this to anything you want, or simply not include it at all if you would like your page content to extend to the maximum width of the user's web browser window.
