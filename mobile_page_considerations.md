@@ -7,9 +7,7 @@ Dark mode may present challenges when styling Canvas content. Canvas default col
 The blockquote at the top of our Wonderful World of Tea page was styled with 'background-color: #fefefa`, a very light grey color. Without changing the blockquote font color, that page would look like this in the Canvas Mobile app in the light mode:
 
 ### Light Mode
-<!-- ![Wonderful World of Tea page in Canvas Mobile App in light mode.](assets/light_mode.png) -->
-
-  <figure style="width: 40%; float: left; margin: 0 30px 10px 0;"><img src="assets/light_mode.png" alt="Wonderful World of Tea page in Canvas Mobile App in light mode." title="" /></figure>
+![Wonderful World of Tea page in Canvas Mobile App in light mode.](assets/light_mode.png)
 
 ### Dark Mode
 However, if a user has the Canvas Mobile running in dark mode, the page would look like this:
@@ -31,6 +29,6 @@ By specifying a dark color on white backgrounds:
 
 This style attribute on the div, `color:#2d3b45;`, is telling Canvas to use a dark grey for the text in the container, rather than inherit the default dark mode font color:
 
-![](/assets/dark_mode_fixed.png)
+![Wonderful World of Tea page in Canvas Mobile App in dark mode with font color specified as #2d3b45](/assets/dark_mode_fixed.png)
 
 You may also notice that the text below the blockquote box, "Tea is an aromatic beverage..." is white. This is the default behavior. No text color was specified for these paragraphs: `<p>Tea is an aromatic beverage... </p>`
