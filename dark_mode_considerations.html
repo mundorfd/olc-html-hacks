@@ -1,46 +1,33 @@
-<h1>Would this page look good on a mobile?</h1>
-
 <h2 style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">Dark Mode Considerations</h2>
-
-<p>Canvas applications for Android and iOS support dark themes. The dark mode option was implemented to accommodate light-sensitive users, those who read in the evening, or who prefer the dark mode appearance.
-Dark mode may present challenges when styling Canvas content. Canvas default colors change in dark mode. By default, dark text becomes white.
-The blockquote at the top of our Wonderful World of Tea page was styled with 'background-color: #fefefa`, a very light grey color. Without changing the blockquote font color, that page would look like this in the Canvas Mobile app in the light mode:</p>
-
-<h3 style="border-bottom: 1px solid #e6e7e8; font-size: 12pt; margin-top: 12px; margin-bottom: 12px;">Light Mode</h3>
-
-
- <figure style="width: 40%; float: left; margin: 0 30px 10px 0;"><img src="/assets/light_mode.png" alt="Wonderful World of Tea page in Canvas Mobile App in light mode." /></figure>
-
- <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 12pt; margin-top: 12px; margin-bottom: 12px; clear: both;">Dark Mode</h3>
-
-
- <p>However, if a user has the Canvas Mobile running in dark mode, the page would look like this:</p>
-
-
-<figure style="width: 40%; float: left; margin: 0 30px 10px 0;"><img src="/assets/dark_mode.png" alt="Wonderful World of Tea page in Canvas Mobile App in light mode default font color" title="" /></figure>
-
-
-<p>Because the text turns white in dark mode, it is difficult or impossible to read text against a light background.</p>
-
-
-<h3 style="border-bottom: 1px solid #e6e7e8; font-size: 12pt; margin-top: 12px; margin-bottom: 12px;">Simple Fix</h3>
-
-
-<p>By specifying a dark color on white backgrounds:</p>
-
-
-<pre>
-    &lt;div style="color: #2d3b45; background-color: #fefefa; border: 1px solid #b2b2af; padding: 10px 20px 10px 20px;"&gt;
+<p>Canvas applications for Android and iOS support dark themes. The dark mode option was implemented to accommodate light-sensitive users, those who read in the evening, or who prefer the dark mode appearance. Dark mode may present challenges when styling Canvas content. Canvas default colors change in dark mode. By default, dark text becomes white.</p>
+<h3 style="border-bottom: 1px solid #e6e7e8; font-size: 12pt; margin-top: 24px; margin-bottom: 12px;"><strong>Light Mode</strong></h3>
+<div class="grid-row">
+    <div class="col-xs-12 col-md-6 col-lg-6">
+        <p>The blockquote at the top of our <a title="The Wonderful World of Tea: An Introduction - Formatted - Divs in one group" href="https://canvas.oregonstate.edu/courses/1941713/pages/the-wonderful-world-of-tea-an-introduction-formatted-divs-in-one-group" data-course-type="wikiPages" data-published="false" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/pages/the-wonderful-world-of-tea-an-introduction-formatted-divs-in-one-group" data-api-returntype="Page">Wonderful World of Tea page</a> was styled with <code>'background-color: #fefefa`,</code> a very light grey color. Without changing the blockquote font color, that page would look like this in the Canvas Mobile app in the light mode.</p>
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-6">
+<img id="100657429" src="https://canvas.oregonstate.edu/courses/1941713/files/100657429/preview" alt="Wonderful World of Tea page in Canvas Mobile App in light mode" width="296" height="640" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/100657429" data-api-returntype="File" />
+    </div>
+</div>
+<h3 style="border-bottom: 1px solid #e6e7e8; font-size: 12pt; margin-top: 24px; margin-bottom: 12px; clear: both;"><strong>Dark Mode</strong></h3>
+<div class="grid-row">
+    <div class="col-xs-12 col-md-6 col-lg-6">
+        <p>Because the text turns white in dark mode, it is difficult or impossible to read text against a light background.</p>
+        <p>However, if a user has the Canvas Mobile running in dark mode, the page would look like this.</p>
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-6"><img id="100657428" src="https://canvas.oregonstate.edu/courses/1941713/files/100657428/preview" alt="Wonderful World of Tea page in Canvas Mobile App in light mode default font color" width="296" height="640" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/100657428" data-api-returntype="File" /></div>
+</div>
+<h3 style="border-bottom: 1px solid #e6e7e8; font-size: 12pt; margin-top: 24px; margin-bottom: 12px; clear: both;"><strong>Simple Fix</strong></h3>
+<div class="grid-row">
+    <div class="col-xs-12 col-md-6 col-lg-6">
+        <p>This style attribute on the div, <code>color:#2d3b45;</code>, is telling Canvas to use a dark grey for the text in the container, rather than inherit the default dark mode font color:</p>
+        <p>You may also notice that the text below the blockquote box, "Tea is an aromatic beverage..." is white. This is the default behavior. No text color was specified for these paragraphs: <code>&lt;p&gt;Tea is an aromatic beverage... &lt;/p&gt;</code></p>
+        <p>By specifying a dark color on light backgrounds, you can ensure that the text will be visible in the mobile app, even if it is running in dark mode.</p>
+        <pre>    &lt;div style="color: #2d3b45; background-color: #fefefa; border: 1px solid #b2b2af; padding: 10px 20px 10px 20px;"&gt;
         &lt;blockquote&gt;...&lt;/blockquote&gt;
         ...
     &lt;/div&gt;
 </pre>
-
-<p>This style attribute on the div, <code>color:#2d3b45;</code>, is telling Canvas to use a dark grey for the text in the container, rather than inherit the default dark mode font color:</p>
-
-
-<figure style="width: 40%; float: left; margin: 0 30px 10px 0;"><img src="/assets/dark_mode_fixed.png" alt="Wonderful World of Tea page in Canvas Mobile App in dark mode with font color specified as #2d3b45" title="" /></figure>
-
-
-<p>You may also notice that the text below the blockquote box, "Tea is an aromatic beverage..." is white. This is the default behavior. No text color was specified for these paragraphs: <code>&lt;p&gt;Tea is an aromatic beverage... &lt;/p&gt;</code></p>
-
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-6"><img id="100657427" src="https://canvas.oregonstate.edu/courses/1941713/files/100657427/preview" alt="Wonderful World of Tea page in Canvas Mobile App in dark mode with font color specified as #2d3b45" width="296" height="640" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/100657427" data-api-returntype="File" /></div>
+</div>
