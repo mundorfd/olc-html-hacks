@@ -418,8 +418,6 @@ On our site, we are going to make each row uneven, as this gives more room for t
         <div class="col-xs-12 col-lg-7">
             <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401297/preview" alt="Tea ceremony" width="500" height="333" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401297" data-api-returntype="File" /></p>
         </div>
-    </div>
-    <div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
         <div class="col-xs-12 col-lg-5">
             <h3>UK</h3>
             <p>In the United Kingdom, 63% of people drink tea daily. It is customary for a host to offer tea to guests soon after their arrival. Tea is consumed both at home and outside the home, often in caf&eacute;s or tea rooms. Afternoon tea with cakes on fine porcelain is a cultural stereotype.</p>
@@ -427,8 +425,6 @@ On our site, we are going to make each row uneven, as this gives more room for t
         <div class="col-xs-12 col-lg-7">
             <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401298/preview" alt="Old school style tea set with cakes" width="503" height="336" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401298" data-api-returntype="File" /></p>
         </div>
-    </div>
-    <div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
         <div class="col-xs-12 col-lg-5">
             <h3>Russia</h3>
             <p>Russia has a long, rich tea history dating to 1638 when tea was introduced to Tsar Michael. Russian tea is brewed and can be served sweet, and hot or cold. It is traditionally taken at afternoon tea, but has since spread as an all day drink, especially at the end of meals, served with dessert. Social gatherings were considered incomplete without tea, which was traditionally brewed in a samovar.&nbsp;</p>
@@ -436,8 +432,6 @@ On our site, we are going to make each row uneven, as this gives more room for t
         <div class="col-xs-12 col-lg-7">
             <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401299/preview" alt="Traditional Russian tea with samovar" width="501" height="427" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401299" data-api-returntype="File" /></p>
         </div>
-    </div>
-    <div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
         <div class="col-xs-12 col-lg-5">
             <h3>India</h3>
             <p>Indian tea culture is strong; the drink is the most popular hot beverage in the country. It is consumed daily in almost all houses, offered to guests, consumed in high amounts in domestic and official surroundings, and is made with the addition of milk with or without spices, and usually sweetened. It is sometimes served with biscuits to be dipped in the tea and eaten before consuming the tea.&nbsp;</p>
@@ -445,8 +439,6 @@ On our site, we are going to make each row uneven, as this gives more room for t
         <div class="col-xs-12 col-lg-7">
             <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401300/preview" alt="Pouring Indian tea with milk and spices from a ceramic teapot" width="500" height="333" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401300" data-api-returntype="File" /></p>
         </div>
-    </div>
-    <div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
         <div class="col-xs-12 col-lg-5">
             <h3>Burma</h3>
             <p>In Burma (Myanmar), tea is consumed not only as hot drinks, but also as sweet tea and green tea known locally as laphet-yay and laphet-yay-gyan, respectively. Pickled tea leaves, known locally as lahpet, are also a national delicacy. Pickled tea is usually eaten with roasted sesame seeds, crispy fried beans, roasted peanuts and fried garlic chips.</p>
