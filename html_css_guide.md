@@ -104,7 +104,7 @@ The changes required are simpler than they look:
 * Replace inner `<p>` tags with `<figcaption>` tags
 * Add required inline CSS to the initial `<figure>`, which will position it to the right.
 
-For this demonstration, we have added the following styles: 
+For this demonstration, we have added the following styles to the `<figure>` tag: 
 
 ```css
 width: 25%;
