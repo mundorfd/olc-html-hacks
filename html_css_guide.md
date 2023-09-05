@@ -449,15 +449,6 @@ On our site, we are going to make each row uneven, as this gives more room for t
     </div>
 ```
 
-## Challenges 
-The following challenges are available to test what you know! Choose the level that is right for you.
-
-### HTML/CSS is new to you
-If you have never edited HTML and CSS before, try this challenge:
-
-### Experienced with HTML/CSS
-If you're a little more experienced with HTML and CSS, try this challenge:
-
 ## Resource List
 1. [W3Schools HTML Elements Reference](https://www.w3schools.com/tags/tag_div.ASP)
 2. [W3Schools HTML class Attribute](https://www.w3schools.com/html/html_classes.asp)
