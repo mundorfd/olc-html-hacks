@@ -114,7 +114,7 @@ margin-left: 30px;
 ```
 1. The `width` property sets the **maximum** width that the image can be.
 2. The `float` property will place the element either to the left or right, allowing text to wrap around it.
-3. The `margin` property will set a margin area on the top, right, bottom and left (in that order). So 0 on the top, 0 on the right, 10 pixels on the bottom, and 30 pixels on the left. This would have the same effect as setting each up manually, like this: `margin-bottom: 10px; margin-left: 30px;`
+3. The `margin-bottom` and `margin-right` properties will set margin areas on the bottom and right. You can also use the shorthand `margin` property, which will set a margin area on the top, right, bottom and left (in that order). So 0 on the top, 0 on the right, 10 pixels on the bottom, and 30 pixels on the left. This would have the same effect as setting each up manually, like this: `margin-bottom: 10px; margin-left: 30px;`
 
 > [!NOTE]
 > Margins, and properties like this, go clockwise around the element, starting from the top.
