@@ -102,7 +102,7 @@ The changes required are simpler than they look:
 
 * Remove all the `<p>` and `</p>` tags
 * At the start, add our `<figure>` tag before the `<img>` tag begins.
-* Where the caption starts on what was originally our second paragraph, add `<figcaption>` to open the new caption and then add `</figcaption>` to close it.
+* Where the caption starts on what was originally our second paragraph, add `<figcaption>` to open the new caption and then add `</figcaption>` at the end to close it.
 * Finally, add `</figure>` at the very end to close the initial `<figure>` element.
 
 Then we just need to style it:
