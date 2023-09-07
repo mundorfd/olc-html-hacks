@@ -100,8 +100,12 @@ To this:
 
 The changes required are simpler than they look:
 
-* Replace outer `<p>` tags with `<figure>` tags
-* Replace inner `<p>` tags with `<figcaption>` tags
+* Remove all the `<p>` and `</p>` tags
+* At the start, add our `<figure>` tag before the `<img>` tag begins.
+* Where the caption starts on what was originally our second paragraph, add `<figcaption>` to open the new caption and then add `</figcaption>` to close it.
+* Finally, add `</figure>` at the very end to close the initial `<figure>` element.
+
+Then we just need to style it:
 * Add required inline CSS to the initial `<figure>`, which will position it to the right.
 
 For this demonstration, we have added the following styles to the `<figure>` tag: 
