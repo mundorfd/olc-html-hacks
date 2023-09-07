@@ -113,8 +113,7 @@ For this demonstration, we have added the following styles to the `<figure>` tag
 ```css
 width: 25%;
 float: right;
-margin-bottom: 10px;
-margin-left: 30px;
+margin: 0 0 10px 30px;
 ```
 1. The `width` property sets the **maximum** width that the image can be.
 2. The `float` property will place the element either to the left or right, allowing text to wrap around it.
