@@ -301,7 +301,7 @@ Canvas has its own implementation of Flexbox using the `.grid-row` class, and so
 Open a new `div` container, but instead of just using a `style` attribute, we are going to use a `class` attribute as well:
 
 ```html
-<div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
+<div class="grid-row" style="margin: 30px 0 50px 0;">
 [...]
 </div>
 ```
