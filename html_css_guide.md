@@ -63,16 +63,16 @@ and (for 4th item):
 This will leave us with something like this:
 
 ```html
-        <p>In this section, we'll talk about tea! Please review the following topics:</p>
-        <ol>
-            <li><a href="#whatis">What is tea?</a></li>
-            <li><a href="#types">What are the main types of tea?</a></li>
-            <li><a href="#comefrom">Where does tea come from?</a></li>
-        </ol>
-        <p>Optional:</p>
-        <ol start="4">
-            <li><a href="#consumed">How is tea consumed around the world?</a></li>
-        </ol>
+<p>In this section, we'll talk about tea! Please review the following topics:</p>
+<ol>
+    <li><a href="#whatis">What is tea?</a></li>
+    <li><a href="#types">What are the main types of tea?</a></li>
+    <li><a href="#comefrom">Where does tea come from?</a></li>
+</ol>
+<p>Optional:</p>
+<ol start="4">
+    <li><a href="#consumed">How is tea consumed around the world?</a></li>
+</ol>
 ```
 
 Now when you click on any of the list items, it will append the `#id` to the end of the current URL, and scroll the page to the corresponding `id`. This will work on **any** page you copy the HTML into, and is why we did not add a full link with `https://...`!
@@ -93,9 +93,9 @@ Essentially, we are going from this:
 To this:
 
 ```html
-    <figure style="width: 25%; float: right; margin: 0 0 10px 30px;"><img src="https://canvas.oregonstate.edu/courses/1963612/files/100708737/preview" alt="camellia sinensis" width="249" height="302" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/100708737" data-api-returntype="File" />
-        <figcaption><span style="font-size: 10pt;">Photo: Tea plant <em>(Camellia sinensis) </em>from K&ouml;hler's Medicinal Plants, 1897. Source: <a class="inline_disabled" href="https://en.wikipedia.org/wiki/File:Camellia_sinensis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-025.jpg" target="_blank" rel="noopener">Wikimedia Commons, Public Domain.</a></span></figcaption>
-    </figure>
+<figure style="width: 25%; float: right; margin: 0 0 10px 30px;"><img src="https://canvas.oregonstate.edu/courses/1963612/files/100708737/preview" alt="camellia sinensis" width="249" height="302" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/100708737" data-api-returntype="File" />
+    <figcaption><span style="font-size: 10pt;">Photo: Tea plant <em>(Camellia sinensis) </em>from K&ouml;hler's Medicinal Plants, 1897. Source: <a class="inline_disabled" href="https://en.wikipedia.org/wiki/File:Camellia_sinensis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-025.jpg" target="_blank" rel="noopener">Wikimedia Commons, Public Domain.</a></span></figcaption>
+</figure>
 ```
 
 The changes required are simpler than they look:
@@ -128,8 +128,8 @@ margin: 0 0 10px 30px;
 Aligning the second image works in much the same way, only this time we are going to `float` it to the left instead of the right:
 ```html
 <figure style="width: 40%; float: left; margin: 0 30px 10px 0;"><img src="https://canvas.oregonstate.edu/courses/1963612/files/100708731/preview" alt="Four types of tea" width="381" height="230" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/100708731" data-api-returntype="File" />
-        <figcaption><span style="font-size: 10pt;">Photo: Teas of different levels of oxidation (left to right): green, yellow, oolong, and black. Source: <a class="inline_disabled" href="https://en.wikipedia.org/wiki/File:Tea_in_different_grade_of_fermentation.jpg" target="_blank" rel="noopener">Wikimedia Commons, Public Domain.</a></span></figcaption>
-    </figure>
+    <figcaption><span style="font-size: 10pt;">Photo: Teas of different levels of oxidation (left to right): green, yellow, oolong, and black. Source: <a class="inline_disabled" href="https://en.wikipedia.org/wiki/File:Tea_in_different_grade_of_fermentation.jpg" target="_blank" rel="noopener">Wikimedia Commons, Public Domain.</a></span></figcaption>
+</figure>
 ```
 
 The CSS settings for this are:
@@ -247,7 +247,7 @@ padding: 10px 20px 10px 20px;
 
 Then we just add it to our Introduction section by creating the `div` container with the styles:
 ```html
- <div style="color: #2d3b45; background-color: #fefefa; border: 1px solid #b2b2af; padding: 10px 20px 10px 20px;">
+<div style="color: #2d3b45; background-color: #fefefa; border: 1px solid #b2b2af; padding: 10px 20px 10px 20px;">
 ```
 
 And close at the end of the Introduction section:
@@ -259,22 +259,21 @@ And close at the end of the Introduction section:
 So now the entire introduction section is separated from the rest of the page with a container, which is styled using our chosen colors and border:
 
 ```html
- <div style="color: #2d3b45; background-color: #fefefa; border: 1px solid #b2b2af; padding: 10px 20px 10px 20px;">
-        <blockquote>
-            <p>&ldquo;I say let the world go to hell, but I should always have my tea.&rdquo; ― Fyodor Dostoevsky, Notes from Underground</p>
-        </blockquote>
-        <p>In this section, we'll talk about tea! Please review the following topics:</p>
-        <ol>
-            <li><a href="#whatis">What is tea?</a></li>
-            <li><a href="#types">What are the main types of tea?</a></li>
-            <li><a href="#comefrom">Where does tea come from?</a></li>
-        </ol>
-        <p>Optional:</p>
-        <ol start="4">
-            <li><a href="#consumed">How is tea consumed around the world?</a></li>
-        </ol>
-        <a href="#consumed"> </a>
-    </div>
+    <div style="color: #2d3b45; background-color: #fefefa; border: 1px solid #b2b2af; padding: 10px 20px 10px 20px;">
+    <blockquote>
+        <p>&ldquo;I say let the world go to hell, but I should always have my tea.&rdquo; ― Fyodor Dostoevsky, Notes from Underground</p>
+    </blockquote>
+    <p>In this section, we'll talk about tea! Please review the following topics:</p>
+    <ol>
+        <li><a href="#whatis">What is tea?</a></li>
+        <li><a href="#types">What are the main types of tea?</a></li>
+        <li><a href="#comefrom">Where does tea come from?</a></li>
+    </ol>
+    <p>Optional:</p>
+    <ol start="4">
+        <li><a href="#consumed">How is tea consumed around the world?</a></li>
+    </ol>
+</div>
 ```
 
 ![New Intro Section](/assets/new_intro_section.png)
