@@ -86,14 +86,14 @@ Our next step involves a few different steps. Let's decompose the problem:
 Essentially, we are going from this:
 
 ```html
-<p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401295/preview" alt="camellia sinensis" width="249" height="302" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401295" data-api-returntype="File" /></p>
+<p><img src="https://canvas.oregonstate.edu/courses/1963612/files/98401295/preview" alt="camellia sinensis" width="249" height="302" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/98401295" data-api-returntype="File" /></p>
 <p><span style="font-size: 10pt;">Photo: Tea plant <em>(Camellia sinensis) </em>from K&ouml;hler's Medicinal Plants, 1897. Source: <a class="inline_disabled" href="https://en.wikipedia.org/wiki/File:Camellia_sinensis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-025.jpg" target="_blank" rel="noopener">Wikimedia Commons, Public Domain.</a></span></p>
 ```
 
 To this:
 
 ```html
-    <figure style="width: 25%; float: right; margin: 0 0 10px 30px;"><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401295/preview" alt="camellia sinensis" width="249" height="302" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401295" data-api-returntype="File" />
+    <figure style="width: 25%; float: right; margin: 0 0 10px 30px;"><img src="https://canvas.oregonstate.edu/courses/1963612/files/98401295/preview" alt="camellia sinensis" width="249" height="302" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/98401295" data-api-returntype="File" />
         <figcaption><span style="font-size: 10pt;">Photo: Tea plant <em>(Camellia sinensis) </em>from K&ouml;hler's Medicinal Plants, 1897. Source: <a class="inline_disabled" href="https://en.wikipedia.org/wiki/File:Camellia_sinensis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-025.jpg" target="_blank" rel="noopener">Wikimedia Commons, Public Domain.</a></span></figcaption>
     </figure>
 ```
@@ -127,7 +127,7 @@ margin: 0 0 10px 30px;
 ### Align the second image
 Aligning the second image works in much the same way, only this time we are going to `float` it to the left instead of the right:
 ```html
-<figure style="width: 40%; float: left; margin: 0 30px 10px 0;"><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401296/preview" alt="Four types of tea" width="381" height="230" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401296" data-api-returntype="File" />
+<figure style="width: 40%; float: left; margin: 0 30px 10px 0;"><img src="https://canvas.oregonstate.edu/courses/1963612/files/98401296/preview" alt="Four types of tea" width="381" height="230" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/98401296" data-api-returntype="File" />
         <figcaption><span style="font-size: 10pt;">Photo: Teas of different levels of oxidation (left to right): green, yellow, oolong, and black. Source: <a class="inline_disabled" href="https://en.wikipedia.org/wiki/File:Tea_in_different_grade_of_fermentation.jpg" target="_blank" rel="noopener">Wikimedia Commons, Public Domain.</a></span></figcaption>
     </figure>
 ```
@@ -360,35 +360,35 @@ On our site, we are going to make each row uneven, as this gives more room for t
             <p>The Chinese and Japanese tea ceremonies traditions employ certain techniques and ritualized protocol of brewing and serving tea for enjoyment in a refined setting. &nbsp;All of these tea ceremonies and rituals contain "an adoration of the beautiful among the sordid facts of everyday life", as well as refinement, an inner spiritual content, humility, restraint and simplicity.</p>
         </div>
         <div class="col-xs-12 col-lg-7">
-            <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401297/preview" alt="Tea ceremony" width="500" height="333" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401297" data-api-returntype="File" /></p>
+            <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/98401297/preview" alt="Tea ceremony" width="500" height="333" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/98401297" data-api-returntype="File" /></p>
         </div>
         <div class="col-xs-12 col-lg-5">
             <h3>UK</h3>
             <p>In the United Kingdom, 63% of people drink tea daily. It is customary for a host to offer tea to guests soon after their arrival. Tea is consumed both at home and outside the home, often in caf&eacute;s or tea rooms. Afternoon tea with cakes on fine porcelain is a cultural stereotype.</p>
         </div>
         <div class="col-xs-12 col-lg-7">
-            <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401298/preview" alt="Old school style tea set with cakes" width="503" height="336" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401298" data-api-returntype="File" /></p>
+            <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/98401298/preview" alt="Old school style tea set with cakes" width="503" height="336" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/98401298" data-api-returntype="File" /></p>
         </div>
         <div class="col-xs-12 col-lg-5">
             <h3>Russia</h3>
             <p>Russia has a long, rich tea history dating to 1638 when tea was introduced to Tsar Michael. Russian tea is brewed and can be served sweet, and hot or cold. It is traditionally taken at afternoon tea, but has since spread as an all day drink, especially at the end of meals, served with dessert. Social gatherings were considered incomplete without tea, which was traditionally brewed in a samovar.&nbsp;</p>
         </div>
         <div class="col-xs-12 col-lg-7">
-            <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401299/preview" alt="Traditional Russian tea with samovar" width="501" height="427" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401299" data-api-returntype="File" /></p>
+            <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/98401299/preview" alt="Traditional Russian tea with samovar" width="501" height="427" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/98401299" data-api-returntype="File" /></p>
         </div>
         <div class="col-xs-12 col-lg-5">
             <h3>India</h3>
             <p>Indian tea culture is strong; the drink is the most popular hot beverage in the country. It is consumed daily in almost all houses, offered to guests, consumed in high amounts in domestic and official surroundings, and is made with the addition of milk with or without spices, and usually sweetened. It is sometimes served with biscuits to be dipped in the tea and eaten before consuming the tea.&nbsp;</p>
         </div>
         <div class="col-xs-12 col-lg-7">
-            <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401300/preview" alt="Pouring Indian tea with milk and spices from a ceramic teapot" width="500" height="333" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401300" data-api-returntype="File" /></p>
+            <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/98401300/preview" alt="Pouring Indian tea with milk and spices from a ceramic teapot" width="500" height="333" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/98401300" data-api-returntype="File" /></p>
         </div>
         <div class="col-xs-12 col-lg-5">
             <h3>Burma</h3>
             <p>In Burma (Myanmar), tea is consumed not only as hot drinks, but also as sweet tea and green tea known locally as laphet-yay and laphet-yay-gyan, respectively. Pickled tea leaves, known locally as lahpet, are also a national delicacy. Pickled tea is usually eaten with roasted sesame seeds, crispy fried beans, roasted peanuts and fried garlic chips.</p>
         </div>
         <div class="col-xs-12 col-lg-7">
-            <p><img src="https://canvas.oregonstate.edu/courses/1941713/files/98401301/preview" alt="Traditional Burmese Lahpet salad, made out of fermented tea leaves, served with nuts, beans and sprouts." width="500" height="331" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1941713/files/98401301" data-api-returntype="File" /></p>
+            <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/98401301/preview" alt="Traditional Burmese Lahpet salad, made out of fermented tea leaves, served with nuts, beans and sprouts." width="500" height="331" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/98401301" data-api-returntype="File" /></p>
         </div>
     </div>
 ```
