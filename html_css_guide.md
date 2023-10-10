@@ -259,7 +259,7 @@ And close at the end of the Introduction section:
 So now the entire introduction section is separated from the rest of the page with a container, which is styled using our chosen colors and border:
 
 ```html
-    <div style="color: #2d3b45; background-color: #fefefa; border: 1px solid #b2b2af; padding: 10px 20px 10px 20px;">
+<div style="color: #2d3b45; background-color: #fefefa; border: 1px solid #b2b2af; padding: 10px 20px 10px 20px;">
     <blockquote>
         <p>&ldquo;I say let the world go to hell, but I should always have my tea.&rdquo; ― Fyodor Dostoevsky, Notes from Underground</p>
     </blockquote>
@@ -291,7 +291,7 @@ Let's apply some classes to the `<table>` on Canvas. To get the effect we have h
 Replace the first `<table>` tag with:
 
 ```html
-   <table class="ic-Table ic-Table--striped ic-Table--hover-row" style="border-collapse: collapse; width: 52.6913%; height: 306px; margin-left: auto; margin-right: auto;" border="1">
+<table class="ic-Table ic-Table--striped ic-Table--hover-row" style="border-collapse: collapse; width: 52.6913%; height: 306px; margin-left: auto; margin-right: auto;" border="1">
 ```
 
 
