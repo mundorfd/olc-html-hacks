@@ -154,22 +154,17 @@ Let's style the `h2` elements so they stand out. We are going to make the follow
 1. Change font color to white (there are many ways to do this, but the quickest is to use the hexidecimal code for white, which is #ffffff).
 2. Add a dark green background color to the entire element (using hex code #004225).
 3. Change the font-size to `18pt`.
-4. Add a margin to the top of 50 pixels.
-5. Add a margin to the bottom of 20 pixels.
-6. Add additional padding around the text of the element of 7 pixels. (This will push the text 7 pixels out in either direction).
+4. Add a margin to the top of 50 pixels and a margin to the bottom of 20 pixels
+5. Add additional padding around the text of the element of 7 pixels. (This will push the text 7 pixels out in either direction).
 
 The CSS for this would be:
 ```css
 color: #ffffff;
 background-color: #004225;
 font-size: 18pt;
-margin-top: 50px;
-margin-bottom: 20px;
+margin: 50px 0 20px 0;
 padding: 7px;
 ```
-
-> [!NOTE]
-> Steps 4 and 5 could be combined by using the `margin` shorthand property as we have done above. In this case, it would be `margin: 50px 0 20px 0;` 
 
 One of our new `h2` elements will now look like this:
 
