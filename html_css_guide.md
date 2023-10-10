@@ -120,7 +120,7 @@ margin: 0 0 10px 30px;
 3. The `margin` property will set a margin area on the top, right, bottom and left (in that order). So 0 on the top, 0 on the right, 10 pixels on the bottom, and 30 pixels on the left.
 
 > [!NOTE]
-> Margins, and properties like this, go clockwise around the element, starting from the top.
+> `margin` and `padding` values go clockwise around the element, starting from the top.
 
 ![New Float Right](assets/new_float_right.png)
 
