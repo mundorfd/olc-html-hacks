@@ -174,7 +174,7 @@ padding: 7px;
 One of our new `h2` elements will now look like this:
 
 ```html
-<h2 id="whatis" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">What is tea?</h2>
+<h2 id="whatis" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin: 50px 0 20px 0; padding: 7px;">What is tea?</h2>
 ```
 
 ![New Heading 2 Style](/assets/new_heading2.png)
