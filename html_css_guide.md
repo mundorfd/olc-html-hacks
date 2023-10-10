@@ -1,6 +1,6 @@
 # Step by Step Guide and Resources List
 > [!IMPORTANT]
-> Make sure to write any new HTML/CSS in a text editor of your choice, and then copy into Canvas. This is in case you make a mistake and Canvas deletes everything you just made!
+> To prevent loss of work, write any new HTML/CSS in a text editor of your choice, and then copy into Canvas. This is in case you make a mistake and Canvas deletes everything you just made!
 
 ## Step by Step Guide
 
