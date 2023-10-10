@@ -354,43 +354,43 @@ And what would happen here is that on an extra small screen like a mobile device
 On our site, we are going to make each row uneven, as this gives more room for the images over the text.
 
 ```html
-  <div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
-        <div class="col-xs-12 col-lg-5">
-            <h3>China and Japan</h3>
-            <p>The Chinese and Japanese tea ceremonies traditions employ certain techniques and ritualized protocol of brewing and serving tea for enjoyment in a refined setting. &nbsp;All of these tea ceremonies and rituals contain "an adoration of the beautiful among the sordid facts of everyday life", as well as refinement, an inner spiritual content, humility, restraint and simplicity.</p>
-        </div>
-        <div class="col-xs-12 col-lg-7">
-            <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/100708732/preview" alt="Tea ceremony" width="500" height="333" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/100708732" data-api-returntype="File" /></p>
-        </div>
-        <div class="col-xs-12 col-lg-5">
-            <h3>UK</h3>
-            <p>In the United Kingdom, 63% of people drink tea daily. It is customary for a host to offer tea to guests soon after their arrival. Tea is consumed both at home and outside the home, often in caf&eacute;s or tea rooms. Afternoon tea with cakes on fine porcelain is a cultural stereotype.</p>
-        </div>
-        <div class="col-xs-12 col-lg-7">
-            <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/100708733/preview" alt="Old school style tea set with cakes" width="503" height="336" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/100708733" data-api-returntype="File" /></p>
-        </div>
-        <div class="col-xs-12 col-lg-5">
-            <h3>Russia</h3>
-            <p>Russia has a long, rich tea history dating to 1638 when tea was introduced to Tsar Michael. Russian tea is brewed and can be served sweet, and hot or cold. It is traditionally taken at afternoon tea, but has since spread as an all day drink, especially at the end of meals, served with dessert. Social gatherings were considered incomplete without tea, which was traditionally brewed in a samovar.&nbsp;</p>
-        </div>
-        <div class="col-xs-12 col-lg-7">
-            <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/100708734/preview" alt="Traditional Russian tea with samovar" width="501" height="427" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/100708734" data-api-returntype="File" /></p>
-        </div>
-        <div class="col-xs-12 col-lg-5">
-            <h3>India</h3>
-            <p>Indian tea culture is strong; the drink is the most popular hot beverage in the country. It is consumed daily in almost all houses, offered to guests, consumed in high amounts in domestic and official surroundings, and is made with the addition of milk with or without spices, and usually sweetened. It is sometimes served with biscuits to be dipped in the tea and eaten before consuming the tea.&nbsp;</p>
-        </div>
-        <div class="col-xs-12 col-lg-7">
-            <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/100708735/preview" alt="Pouring Indian tea with milk and spices from a ceramic teapot" width="500" height="333" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/100708735" data-api-returntype="File" /></p>
-        </div>
-        <div class="col-xs-12 col-lg-5">
-            <h3>Burma</h3>
-            <p>In Burma (Myanmar), tea is consumed not only as hot drinks, but also as sweet tea and green tea known locally as laphet-yay and laphet-yay-gyan, respectively. Pickled tea leaves, known locally as lahpet, are also a national delicacy. Pickled tea is usually eaten with roasted sesame seeds, crispy fried beans, roasted peanuts and fried garlic chips.</p>
-        </div>
-        <div class="col-xs-12 col-lg-7">
-            <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/100708736/preview" alt="Traditional Burmese Lahpet salad, made out of fermented tea leaves, served with nuts, beans and sprouts." width="500" height="331" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/100708736" data-api-returntype="File" /></p>
-        </div>
+<div class="grid-row" style="margin-top: 30px; margin-bottom: 50px;">
+    <div class="col-xs-12 col-lg-5">
+        <h3>China and Japan</h3>
+        <p>The Chinese and Japanese tea ceremonies traditions employ certain techniques and ritualized protocol of brewing and serving tea for enjoyment in a refined setting. &nbsp;All of these tea ceremonies and rituals contain "an adoration of the beautiful among the sordid facts of everyday life", as well as refinement, an inner spiritual content, humility, restraint and simplicity.</p>
     </div>
+    <div class="col-xs-12 col-lg-7">
+        <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/100708732/preview" alt="Tea ceremony" width="500" height="333" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/100708732" data-api-returntype="File" /></p>
+    </div>
+    <div class="col-xs-12 col-lg-5">
+        <h3>UK</h3>
+        <p>In the United Kingdom, 63% of people drink tea daily. It is customary for a host to offer tea to guests soon after their arrival. Tea is consumed both at home and outside the home, often in caf&eacute;s or tea rooms. Afternoon tea with cakes on fine porcelain is a cultural stereotype.</p>
+    </div>
+    <div class="col-xs-12 col-lg-7">
+        <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/100708733/preview" alt="Old school style tea set with cakes" width="503" height="336" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/100708733" data-api-returntype="File" /></p>
+    </div>
+    <div class="col-xs-12 col-lg-5">
+        <h3>Russia</h3>
+        <p>Russia has a long, rich tea history dating to 1638 when tea was introduced to Tsar Michael. Russian tea is brewed and can be served sweet, and hot or cold. It is traditionally taken at afternoon tea, but has since spread as an all day drink, especially at the end of meals, served with dessert. Social gatherings were considered incomplete without tea, which was traditionally brewed in a samovar.&nbsp;</p>
+    </div>
+    <div class="col-xs-12 col-lg-7">
+        <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/100708734/preview" alt="Traditional Russian tea with samovar" width="501" height="427" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/100708734" data-api-returntype="File" /></p>
+    </div>
+    <div class="col-xs-12 col-lg-5">
+        <h3>India</h3>
+        <p>Indian tea culture is strong; the drink is the most popular hot beverage in the country. It is consumed daily in almost all houses, offered to guests, consumed in high amounts in domestic and official surroundings, and is made with the addition of milk with or without spices, and usually sweetened. It is sometimes served with biscuits to be dipped in the tea and eaten before consuming the tea.&nbsp;</p>
+    </div>
+    <div class="col-xs-12 col-lg-7">
+        <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/100708735/preview" alt="Pouring Indian tea with milk and spices from a ceramic teapot" width="500" height="333" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/100708735" data-api-returntype="File" /></p>
+    </div>
+    <div class="col-xs-12 col-lg-5">
+        <h3>Burma</h3>
+        <p>In Burma (Myanmar), tea is consumed not only as hot drinks, but also as sweet tea and green tea known locally as laphet-yay and laphet-yay-gyan, respectively. Pickled tea leaves, known locally as lahpet, are also a national delicacy. Pickled tea is usually eaten with roasted sesame seeds, crispy fried beans, roasted peanuts and fried garlic chips.</p>
+    </div>
+    <div class="col-xs-12 col-lg-7">
+        <p><img src="https://canvas.oregonstate.edu/courses/1963612/files/100708736/preview" alt="Traditional Burmese Lahpet salad, made out of fermented tea leaves, served with nuts, beans and sprouts." width="500" height="331" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1963612/files/100708736" data-api-returntype="File" /></p>
+    </div>
+</div>
 ```
 
 ## Resource List
