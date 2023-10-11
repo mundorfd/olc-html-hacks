@@ -14,7 +14,7 @@ Add `start="4"` to the opening `<ol>` tag which comes after the 'Optional:' para
 ```
 
 ### Adding `id` attributes to elements
-Sometimes it is necessary to identify certain elements for styling or scripting purposes. To do this, we can add an identifer (or `id`) attribute to the element. These identifiers must be unique within the same HTML document. For this demonstration, we will use a unique `id` on the `h2` elements, so that once clicked, the list items in our linked list at the top moves the page to the corresponding section.
+Sometimes it is necessary to identify certain elements for styling or scripting purposes. To do this, we can add an identifier (or `id`) attribute to the element. These identifiers must be unique within the same HTML document. For this demonstration, we will use a unique `id` on the `h2` elements, so that once clicked, the list items in our linked list at the top moves the page to the corresponding section.
 
 To do this, add `id=` and the unique identifier after the opening `h2` tag, as we have below:
 
@@ -151,7 +151,7 @@ Without any additional styling, elements like headings or paragraphs will have w
 #### Styling Heading 2
 Let's style the `h2` elements so they stand out. We are going to make the following changes:
 
-1. Change font color to white (there are many ways to do this, but the quickest is to use the hexidecimal code for white, which is #ffffff).
+1. Change font color to white (there are many ways to do this, but the quickest is to use the hexadecimal code for white, which is #ffffff).
 2. Add a dark green background color to the entire element (using hex code #004225).
 3. Change the font-size to `18pt`.
 4. Add a margin to the top of 50 pixels and a margin to the bottom of 20 pixels
@@ -274,14 +274,14 @@ So now the entire introduction section is separated from the rest of the page wi
 ![New Intro Section](/assets/new_intro_section.png)
 
 ### Working with classes
-If you have access to the stylesheet of a website, it is easier to create 'classes' that can be applied to elements rather than manaully adding inline CSS. Some classes are already available for you on certain Learning Management Systems. 
+If you have access to the stylesheet of a website, it is easier to create 'classes' that can be applied to elements rather than manually adding inline CSS. Some classes are already available for you on certain Learning Management Systems. 
 
 #### Changing table styles by adding classes
-Let's apply some classes to the `<table>` on Canvas. To get the effect we have here, we are going to use the follwing classes:
+Let's apply some classes to the `<table>` on Canvas. To get the effect we have here, we are going to use the following classes:
 
 * `ic-Table`
 * `ic-Table--striped`:  produces a striped table among rows in the table body.
-* `ic-Table--hover-row`: highlights the row the user's cursor is currently hoving over.
+* `ic-Table--hover-row`: highlights the row the user's cursor is currently hovering over.
 
 Replace the first `<table>` tag with:
 
@@ -342,7 +342,7 @@ Let's say you wanted to make 3 columns with text and images inside them. When so
 </div>
 ```
 
-And what would happen here is that on an extra small screen like a mobile device, the content would be seperated onto 3 rows. However, on a medium screen size and above, all of that content would be on one row, because the first one takes up 4 parts, the next one takes up 4 parts, and the final one takes up 4 parts. 4 + 4 + 4 = 12, and so that is the size of one row. If you changed one of them from `col-md-4` to `col-md-5`, we would get 13, and anything over 12 is pushed onto the next row.
+And what would happen here is that on an extra small screen like a mobile device, the content would be separated onto 3 rows. However, on a medium screen size and above, all of that content would be on one row, because the first one takes up 4 parts, the next one takes up 4 parts, and the final one takes up 4 parts. 4 + 4 + 4 = 12, and so that is the size of one row. If you changed one of them from `col-md-4` to `col-md-5`, we would get 13, and anything over 12 is pushed onto the next row.
 
 ##### Back to the demo
 On our site, we are going to make each row uneven, as this gives more room for the images over the text.
